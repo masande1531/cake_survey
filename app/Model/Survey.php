@@ -30,6 +30,21 @@ class Survey extends AppModel{
         ),
         'consultant' => array(
             'rule' => 'notEmpty'
+        ),		  
+        'p_communitaction' => array(
+            'rule' => 'notEmpty'
+        ),
+		'p_money' => array(
+            'rule' => 'notEmpty'
+        ),
+		  'p_company' => array(
+            'rule' => 'notEmpty'
+        ),
+        'recommend' => array(
+            'rule' => 'notEmpty'
+        ),
+		'feedback' => array(
+            'rule' => 'notEmpty'
         )
     );
 
