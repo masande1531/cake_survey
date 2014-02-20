@@ -12,6 +12,28 @@
  */
 
 class Survey extends AppModel{
+     public $validate = array(
+        'name' => array(
+            'rule' => 'notEmpty'
+        ),
+        'company' => array(
+            'rule' => 'notEmpty'
+        ),
+		  'contact' => array(
+            'rule' => 'notEmpty'
+        ),
+        'email' => array(
+            'rule' => 'notEmpty'
+        ),
+		  'title' => array(
+            'rule' => 'notEmpty'
+        ),
+        'consultant' => array(
+            'rule' => 'notEmpty'
+        )
+    );
+
+}
     
 }
 ?>
