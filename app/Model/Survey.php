@@ -50,5 +50,4 @@ class Survey extends AppModel{
 
 }
     
-}
 ?>
