@@ -23,6 +23,10 @@ class SurveyController extends AppController{
             $this->Session->setFlash(__('Unable to add your post.'));
         }
     }
+    
+     public function view(){
+         $this->set('surveys', $this->Survey->find('all'));
+    }
 }
 ?>
 
