@@ -9,7 +9,8 @@ class SurveyController extends AppController{
     public $helper = array('Html', 'Form');
     
     public function index(){
-        $this->set('surveys', $this->Survey->find('all'));
+        $this->set('surveys', $this->Survey->find('all', array(
+		'group' => array('name', 'p_communication', 'p_money'))));
     }
     
     
